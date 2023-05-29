@@ -53,6 +53,7 @@ void pantInic ()
     int y;
     int vida=0;
     int contador;
+    int juego [DIM][DIM];
 
     gotoxy(40,10);
     printf("Welcome to Game of the Life\n");
@@ -60,11 +61,14 @@ void pantInic ()
     for(x=20; x<90; x++)
     {
         for(y=20; y<60; y++)
-        {
+        {   juego [x][y]=0;
             gotoxy(x,y);
             printf("%c");
+            printf("÷d",juego[x][y]);
         }
     }
+
+
 
     gotoxy(34,21);
     printf("%c",219);
@@ -93,3 +97,4 @@ void pantInic ()
 
 
 }
+
